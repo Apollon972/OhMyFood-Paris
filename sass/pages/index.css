@@ -1,0 +1,45 @@
+header {
+  font-size: 16px;
+  margin-top: 35px;
+}
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header section img {
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.div_loca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid gray;
+  background-color: #EAEAEA;
+}
+.div_loca i {
+  margin-right: 20px;
+}
+
+.div_explorer {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.div_explorer h2 {
+  margin: 10px;
+  margin-top: 30px;
+}
+.div_explorer p {
+  font-size: 16px;
+  margin: 0;
+}
+.div_explorer .btn_explorer {
+  margin: 40px;
+  border-radius: 30px 30px 30px 30px;
+}/*# sourceMappingURL=index.css.map */
