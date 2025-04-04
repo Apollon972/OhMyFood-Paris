@@ -12,6 +12,27 @@ header section img {
   margin-bottom: 20px;
 }
 
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7%;
+}
+footer i {
+  margin-right: 2%;
+  width: 5%;
+}
+footer a {
+  color: white;
+  margin-left: 5%;
+}
+footer img {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 5%;
+}
+
 .div_loca {
   display: flex;
   align-items: center;
@@ -56,6 +77,7 @@ header section img {
 }
 .fonctionnement h3 {
   margin-left: 20px;
+  font-size: 24px;
 }
 .fonctionnement div {
   display: flex;
@@ -86,4 +108,21 @@ header section img {
 }
 .fonctionnement .fonctionnement--purple i {
   color: #9356DC;
+}
+
+.restau h3 {
+  margin-left: 20px;
+  font-size: 24px;
+}
+.restau div {
+  margin: 20px;
+}
+.restau div a {
+  display: flex;
+  flex-direction: column;
+}
+.restau div a img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 30px;
 }/*# sourceMappingURL=index.css.map */
