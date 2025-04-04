@@ -40,6 +40,12 @@ header section img {
   margin: 0;
 }
 .div_explorer .btn_explorer {
-  margin: 40px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border: none;
   border-radius: 30px 30px 30px 30px;
+  color: white;
+  margin: 40px;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
 }/*# sourceMappingURL=index.css.map */
