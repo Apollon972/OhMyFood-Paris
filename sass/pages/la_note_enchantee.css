@@ -1,0 +1,34 @@
+header {
+  font-size: 16px;
+  margin-top: 35px;
+}
+header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header section img {
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7%;
+}
+footer i {
+  margin-right: 2%;
+  width: 5%;
+}
+footer a {
+  color: white;
+  margin-left: 5%;
+}
+footer img {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 5%;
+}/*# sourceMappingURL=la_note_enchantee.css.map */
