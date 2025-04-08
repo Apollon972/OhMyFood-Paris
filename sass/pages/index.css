@@ -36,7 +36,7 @@ footer img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 2px solid gray;
+  box-shadow: inset;
   background-color: #EAEAEA;
 }
 .div_loca i {
