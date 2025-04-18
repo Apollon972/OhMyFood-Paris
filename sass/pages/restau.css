@@ -1,7 +1,7 @@
 header {
+  display: flex;
   font-size: 16px;
   margin-top: 20px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -135,4 +135,4 @@ footer img {
   height: 50px;
   width: 200px;
   font-size: 16px;
-}/*# sourceMappingURL=la_note_enchantee.css.map */
+}/*# sourceMappingURL=restau.css.map */
