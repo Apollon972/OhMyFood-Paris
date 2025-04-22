@@ -210,6 +210,7 @@ h3 {
 }
 .restau .cards {
   margin: 20px;
+  padding-bottom: 20px;
 }
 @media (min-width: 720px) {
   .restau .cards {
@@ -280,6 +281,8 @@ h3 {
 }
 .restau .cards a .div_descr i {
   font-size: 25px;
+  align-self: flex-end;
+  margin-top: -40px;
 }
 @media (min-width: 720px) {
   .restau .cards a .div_descr i {

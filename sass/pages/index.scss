@@ -190,6 +190,7 @@ h3 {
     }
     .cards {
         margin: 20px;
+        padding-bottom: 20px;
         @media (min-width: 720px) {
             width: 45%;
             height: 360px;
@@ -250,12 +251,14 @@ h3 {
                  }
 
                 i {
+                    font-size: 25px;
+                    align-self: flex-end;
+                    margin-top: -40px;
                     @media (min-width: 720px) {
                         grid-area: 2 / 4 / 4 / 4;
                         justify-content: center;
                         padding-right: 5%;
                     }
-                    font-size: 25px;
                 }
             }
         }
