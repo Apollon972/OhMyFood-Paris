@@ -9,6 +9,11 @@ header img {
   width: 75%;
   margin-bottom: 20px;
 }
+@media (min-width: 720px) {
+  header img {
+    max-width: 200px;
+  }
+}
 
 footer {
   background-color: #353535;
