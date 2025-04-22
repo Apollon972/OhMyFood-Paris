@@ -18,14 +18,14 @@ footer {
         background-color: #353535;
         display: flex;
         flex-direction: column;
-        padding-bottom: 7%;
         @media (min-width: 720px) {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
-            padding-bottom: 0%;     
+            padding-top: 50px;
+            padding-bottom: 20px;
         }
         i {
             margin-right: 2%;
@@ -41,10 +41,14 @@ footer {
             max-width: fit-content;
         }
         img {
+            width: 160px;
+            margin: 20px;
             @media (min-width : 720px) {
                 grid-area: 1 / 5 / 2 / 6;
+                width: 140px;
+                margin: 0px;
+
             }
-            font-size: 20px;
         }
     }
 }

@@ -19,7 +19,6 @@ footer div {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  padding-bottom: 7%;
 }
 @media (min-width: 720px) {
   footer div {
@@ -28,7 +27,8 @@ footer div {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding-bottom: 0%;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 }
 footer div i {
@@ -48,11 +48,14 @@ footer div a {
   }
 }
 footer div img {
-  font-size: 20px;
+  width: 160px;
+  margin: 20px;
 }
 @media (min-width: 720px) {
   footer div img {
     grid-area: 1/5/2/6;
+    width: 140px;
+    margin: 0px;
   }
 }
 
