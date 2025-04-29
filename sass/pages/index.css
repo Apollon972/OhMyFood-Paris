@@ -282,8 +282,6 @@ h3 {
 .restau .cards a .div_descr h4 {
   margin: 0;
   font-weight: 900;
-}
-.restau .cards a .div_descr span {
   grid-area: 1/1/4/3;
 }
 .restau .cards a .div_descr i {
