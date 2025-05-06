@@ -64,7 +64,7 @@ footer div a {
   footer div a {
     text-align: center;
     align-self: center;
-    padding-left: 40%;
+    margin-left: 15%;
   }
 }
 footer div img {
