@@ -149,12 +149,13 @@ footer div img {
   margin-left: 20px;
   border: none;
 }
-.menu .section_title button i {
+.menu .section_title button input {
   font-size: 30px;
   padding-top: 20px;
+  position: absolute;
 }
 @media (min-width: 720px) {
-  .menu .section_title button i {
+  .menu .section_title button input {
     padding-top: 0px;
   }
 }
@@ -179,9 +180,13 @@ footer div img {
 .menu .entrees div p {
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 90%;
 }
 .menu .entrees div .div--strong {
   font-weight: 600;
+}
+.menu .entrees div section {
+  display: flex;
 }
 .menu .plats h4 {
   font-size: 24px;
@@ -204,6 +209,10 @@ footer div img {
 .menu .plats div p {
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 90%;
+}
+.menu .plats div section {
+  display: flex;
 }
 .menu .plats div .div--strong {
   font-weight: 600;
@@ -229,9 +238,13 @@ footer div img {
 .menu .desserts div p {
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 90%;
 }
 .menu .desserts div .div--strong {
   font-weight: 600;
+}
+.menu .desserts div section {
+  display: flex;
 }
 .menu .btn_explorer {
   justify-content: center;
