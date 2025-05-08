@@ -149,6 +149,10 @@ footer div img {
   margin-left: 20px;
   border: none;
 }
+.menu .section_title button :checked {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 .menu .section_title button input {
   font-size: 30px;
   padding-top: 20px;
