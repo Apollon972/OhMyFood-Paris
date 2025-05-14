@@ -314,16 +314,17 @@ h3 {
 }
 .menu .section_title button :checked {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.8s ease;
 }
 .menu .section_title button input {
   font-size: 30px;
-  padding-top: 20px;
   position: absolute;
+  color: red;
 }
 @media (min-width: 720px) {
   .menu .section_title button input {
     padding-top: 0px;
+    margin-top: -20px;
   }
 }
 .menu .entrees h4 {
@@ -525,6 +526,9 @@ footer div img {
   height: 50px;
   width: 200px;
   font-size: 16px;
+}
+.btn_explorer:hover {
+  /** A voir avec Seb**/
 }
 
 .span_new {

@@ -59,14 +59,16 @@
             border: none;
             :checked {
                 opacity: 0;
-                transition: opacity 0.3s ease;
+                transition: opacity 0.8s ease;
             }
             input {
                 font-size: 30px;
-                padding-top: 20px;
                 position: absolute;
+                color: red;
                 @media (min-width: 720px) {
                     padding-top: 0px;
+                    margin-top: -20px;
+
                 }
             }
         }
