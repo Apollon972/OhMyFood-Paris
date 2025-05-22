@@ -1,0 +1,44 @@
+.btn-coeur_index {
+    border: none;
+    background-color: white;
+    margin-top: -30px;
+    margin-left: -20px;
+    :checked {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        color: red;
+    }
+    input {
+        font-size: 30px;
+        position: absolute;
+        height: 0;
+        width: 0;
+        @media (min-width: 720px) {
+            padding-top: 0px;
+            margin-top: -20px;
+        }
+    }
+}
+
+input[type="checkbox"]:checked 
+
+.btn-coeur_restau {
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    :checked {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        color: red;
+    }
+    input {
+        font-size: 30px;
+        position: absolute;
+        height: 0;
+        width: 0;
+        @media (min-width: 720px) {
+            padding-top: 0px;
+            margin-top: -20px;
+        }
+    }
+}

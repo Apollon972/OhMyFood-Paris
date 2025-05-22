@@ -1,7 +1,5 @@
-.btn_explorer {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.btn_explorer1 {
+
     background: linear-gradient(to bottom,#FF79DA,$primary-color);
     border: none;
     border-radius: 30px 30px 30px 30px;
@@ -11,6 +9,21 @@
     width: 200px;
     font-size: 16px;
     &:hover {
-        /** A voir avec Seb**/
+        opacity: 70%;
+    }
+}
+.btn_explorer2 {
+
+    background: linear-gradient(to bottom,#FF79DA,$primary-color);
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    color: white;
+    margin: 40px;
+    margin-left: 25%;
+    height: 50px;
+    width: 200px;
+    font-size: 16px;
+    &:hover {
+        opacity: 70%;
     }
 }
