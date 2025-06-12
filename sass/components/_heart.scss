@@ -1,44 +1,79 @@
-.btn-coeur_index {
-    border: none;
-    background-color: white;
+.heartContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: -30px;
-    margin-left: -20px;
-    :checked {
+    input {
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+        opacity: 0;
+        
+    }
+
+    .fa-regular {
+        opacity: 1;
+        position: absolute;
+
+    }
+
+    .fa-solid {
+        opacity: 0;
+        position: absolute;
+        color: $primary-color;
+
+    }
+    :checked ~ .fa-regular {
         opacity: 0;
         transition: opacity 0.8s ease;
-        color: red;
+
     }
-    input {
-        font-size: 30px;
-        position: absolute;
-        height: 0;
-        width: 0;
-        @media (min-width: 720px) {
-            padding-top: 0px;
-            margin-top: -20px;
-        }
+
+    :checked ~ .fa-solid {
+        opacity: 1;
+        transition: opacity 2s ease;
     }
 }
 
-input[type="checkbox"]:checked 
 
-.btn-coeur_restau {
-    border: none;
-    margin-left: 20px;
-    margin-bottom: 35px;
-    :checked {
+
+.heartContainer_restau {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    font-size: 25px;    
+    input {
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+        opacity: 0;
+        
+    }
+
+    .fa-regular {
+        opacity: 1;
+        position: absolute;
+
+    }
+
+    .fa-solid {
+        opacity: 0;
+        position: absolute;
+        color: $primary-color;
+
+    }
+    :checked ~ .fa-regular {
         opacity: 0;
         transition: opacity 0.8s ease;
-        color: red;
+
     }
-    input {
-        font-size: 30px;
-        position: absolute;
-        height: 0;
-        width: 0;
-        @media (min-width: 720px) {
-            padding-top: 0px;
-            margin-top: -20px;
-        }
+
+    :checked ~ .fa-solid {
+        opacity: 1;
+        transition: opacity 2s ease;
+
     }
 }

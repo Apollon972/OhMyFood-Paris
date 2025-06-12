@@ -213,7 +213,7 @@ h3 {
 }
 .restau .cards .div_descr i {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   grid-area: 2/2/3/3;
   margin-top: 10px;
 }
@@ -332,6 +332,7 @@ h3 {
 body {
   font-family: "Roboto", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #353535;
+  margin: 0;
 }
 
 header {
@@ -423,6 +424,7 @@ footer div img {
   height: 50px;
   width: 200px;
   font-size: 16px;
+  cursor: pointer;
 }
 .btn_explorer1:hover {
   opacity: 70%;
@@ -433,11 +435,12 @@ footer div img {
   border: none;
   border-radius: 30px 30px 30px 30px;
   color: white;
+  align-self: center;
   margin: 40px;
-  margin-left: 25%;
   height: 50px;
   width: 200px;
   font-size: 16px;
+  cursor: pointer;
 }
 .btn_explorer2:hover {
   opacity: 70%;
@@ -452,49 +455,65 @@ footer div img {
   border-radius: 2px;
 }
 
-.btn-coeur_index {
-  border: none;
-  background-color: white;
+.heartContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: -30px;
-  margin-left: -20px;
 }
-.btn-coeur_index :checked {
+.heartContainer input {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  opacity: 0;
+}
+.heartContainer .fa-regular {
+  opacity: 1;
+  position: absolute;
+}
+.heartContainer .fa-solid {
+  opacity: 0;
+  position: absolute;
+  color: #9356DC;
+}
+.heartContainer :checked ~ .fa-regular {
   opacity: 0;
   transition: opacity 0.8s ease;
-  color: red;
 }
-.btn-coeur_index input {
-  font-size: 30px;
-  position: absolute;
-  height: 0;
-  width: 0;
-}
-@media (min-width: 720px) {
-  .btn-coeur_index input {
-    padding-top: 0px;
-    margin-top: -20px;
-  }
+.heartContainer :checked ~ .fa-solid {
+  opacity: 1;
+  transition: opacity 2s ease;
 }
 
-input[type=checkbox]:checked .btn-coeur_restau {
-  border: none;
-  margin-left: 20px;
-  margin-bottom: 35px;
+.heartContainer_restau {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  font-size: 25px;
 }
-input[type=checkbox]:checked .btn-coeur_restau :checked {
+.heartContainer_restau input {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  opacity: 0;
+}
+.heartContainer_restau .fa-regular {
+  opacity: 1;
+  position: absolute;
+}
+.heartContainer_restau .fa-solid {
+  opacity: 0;
+  position: absolute;
+  color: #9356DC;
+}
+.heartContainer_restau :checked ~ .fa-regular {
   opacity: 0;
   transition: opacity 0.8s ease;
-  color: red;
 }
-input[type=checkbox]:checked .btn-coeur_restau input {
-  font-size: 30px;
-  position: absolute;
-  height: 0;
-  width: 0;
-}
-@media (min-width: 720px) {
-  input[type=checkbox]:checked .btn-coeur_restau input {
-    padding-top: 0px;
-    margin-top: -20px;
-  }
+.heartContainer_restau :checked ~ .fa-solid {
+  opacity: 1;
+  transition: opacity 2s ease;
 }/*# sourceMappingURL=main.css.map */
