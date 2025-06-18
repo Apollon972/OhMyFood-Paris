@@ -296,27 +296,73 @@ h3 {
   margin-top: 20px;
   margin-bottom: 0;
 }
-.menu .menu_list div {
+.menu .menu_list .menu-card {
   background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: auto;
   margin-bottom: 15px;
   margin-left: 5%;
   margin-right: 5%;
   padding-left: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
-.menu .menu_list div p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 90%;
+.menu .menu_list .menu-card label {
+  display: flex;
+  width: 100%;
 }
-.menu .menu_list div .div--strong {
+.menu .menu_list .menu-card :hover {
+  cursor: pointer;
+}
+.menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-checkmark {
+  right: 108px;
+  opacity: 1;
+}
+.menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-price {
+  transform: translateX(-55px);
+}
+.menu .menu_list .menu-card .menu-info {
+  width: 500px;
+  box-shadow: none;
+}
+.menu .menu_list .menu-card .menu-info .menu-title {
   font-weight: 600;
 }
-.menu .menu_list div section {
+.menu .menu_list .menu-card .menu-info .menu-details {
+  font-size: smaller;
+  font-weight: 350;
+}
+.menu .menu_list .menu-card .menu-price {
+  box-shadow: none;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.menu .menu_list .menu-card .menu-checkmark {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  border-radius: 5px 15px 15px 5px;
+  background-color: #99E2D0;
+  color: white;
+  width: 55px;
+  height: 65px;
+  position: absolute;
+  margin-top: -10px;
+  right: 55px;
+  transition: all 0.3s ease, right 0.3s;
+  opacity: 0;
+}
+.menu .menu_list p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.menu .menu_list i {
+  font-size: 135%;
 }
 .menu .menu_list .underline {
   margin: 0;
@@ -483,7 +529,7 @@ footer div img {
 }
 .heartContainer :checked ~ .fa-solid {
   opacity: 1;
-  transition: opacity 2s ease;
+  transition: opacity 0.8s ease;
 }
 
 .heartContainer_restau {
@@ -515,5 +561,5 @@ footer div img {
 }
 .heartContainer_restau :checked ~ .fa-solid {
   opacity: 1;
-  transition: opacity 2s ease;
+  transition: opacity 0.8s ease;
 }/*# sourceMappingURL=main.css.map */

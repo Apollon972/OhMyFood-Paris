@@ -32,7 +32,7 @@
 
     :checked ~ .fa-solid {
         opacity: 1;
-        transition: opacity 2s ease;
+        transition: opacity 0.8s ease;
     }
 }
 
@@ -71,9 +71,9 @@
 
     }
 
-    :checked ~ .fa-solid {
+    & :checked ~ .fa-solid {
         opacity: 1;
-        transition: opacity 2s ease;
+        transition: opacity 0.8s ease;
 
     }
 }

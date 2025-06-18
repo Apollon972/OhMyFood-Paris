@@ -61,27 +61,73 @@
             margin-top: 20px;
             margin-bottom: 0;
         }
-        div{
+            .menu-card{
             background-color: white;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px rgba(0,0,0,0.10);
+            display: flex;
+            height: auto;
             margin-bottom: 15px;
             margin-left: 5%;
             margin-right: 5%;
             padding-left: 5%;
             padding-top: 2%;
             padding-bottom: 2%;
-            border-radius: 15px;
-            box-shadow: 1px 1px 10px rgba(0,0,0,0.10);
-            p {
-                margin-top: 0px;
-                margin-bottom: 0px;
-                width: 90%;
-            }
-            .div--strong {
-                font-weight: 600;
-            }
-            section {
+            label {
                 display: flex;
+                width: 100%;
             }
+            & :hover {
+                cursor: pointer;
+            }
+            input[type="checkbox"]:checked ~ label .menu-checkmark{
+                right: 108px;
+                opacity: 1;
+            }
+            input[type="checkbox"]:checked ~ label .menu-price {
+                transform: translateX(-55px);
+              }
+            .menu-info {
+                .menu-title {
+                    font-weight: 600;
+                }
+                width: 500px;
+                box-shadow: none;
+                .menu-details {
+                    font-size: smaller;
+                    font-weight: 350;
+                }
+            }
+            .menu-price {
+                box-shadow: none;
+                margin-right: 20px;
+                margin-top: 20px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+            }
+            .menu-checkmark {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: none;
+                    border-radius: 5px 15px 15px 5px;
+                    background-color: #99E2D0;
+                    color: white;
+                    width: 55px;
+                    height: 65px;
+                    position: absolute;
+                    margin-top: -10px;
+                    right: 55px;
+                    transition: all 0.3s ease, right 0.3s;
+                    opacity: 0;
+            }
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        i{
+            font-size: 135%;
         }
         .underline {
             margin: 0;
@@ -95,4 +141,5 @@
         }
     }
 }
+
 
