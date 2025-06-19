@@ -317,8 +317,13 @@ h3 {
   cursor: pointer;
 }
 .menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-checkmark {
-  right: 108px;
+  right: 5%;
   opacity: 1;
+}
+@media (min-width: 720px) {
+  .menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-checkmark {
+    right: 17%;
+  }
 }
 .menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-price {
   transform: translateX(-55px);
@@ -349,13 +354,18 @@ h3 {
   border-radius: 5px 15px 15px 5px;
   background-color: #99E2D0;
   color: white;
-  width: 55px;
+  width: 60px;
   height: 65px;
   position: absolute;
   margin-top: -10px;
-  right: 55px;
+  right: -60px;
   transition: all 0.3s ease, right 0.3s;
   opacity: 0;
+}
+@media (min-width: 720px) {
+  .menu .menu_list .menu-card .menu-checkmark {
+    right: 10%;
+  }
 }
 .menu .menu_list p {
   margin-top: 0px;
