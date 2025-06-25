@@ -149,20 +149,6 @@ h3 {
                     grid-area: 1 / 1 / 3 / 3; 
                 }
             }
-            .span_new {
-                grid-area: 1 / 2 / 2 / 3;                
-                @media (min-width: 720px) {
-                    grid-area: 1 / 2 / 2 / 3;
-                } 
-                align-self: center;
-                text-align: center;
-                color: Green ;
-                background-color: #99E2D0;
-                padding: 5px;
-                margin-top: 25px;
-                border-radius:2px;
-                width: 82%;
-            }
         }
         .div_descr {
             @media (min-width: 720px) {

@@ -66,7 +66,7 @@
             border-radius: 15px;
             box-shadow: 1px 1px 10px rgba(0,0,0,0.10);
             display: flex;
-            height: auto;
+            height: 50px;
             margin-bottom: 15px;
             margin-left: 5%;
             margin-right: 5%;
@@ -94,7 +94,7 @@
                 .menu-title {
                     font-weight: 600;
                 }
-                width: 500px;
+                width: 90%;
                 box-shadow: none;
                 .menu-details {
                     font-size: smaller;
@@ -117,16 +117,22 @@
                     background-color: #99E2D0;
                     color: white;
                     width: 60px;
-                    height: 65px;
+                    height: 77px;
                     position: absolute;
-                    margin-top: -10px;
+                    margin-top: -13px;
                     right: -60px;
                     transition: all 0.3s ease, right 0.3s;
                     opacity: 0;
                     @media (min-width: 720px) {
-
                         right: 10%;
+                        height: 73px;
+                        margin-top: -10px;
                     }
+                    @media (min-width: 1100px) {
+                        right: 10%;
+                        height: 80px;
+                        margin-top: -15px;
+                    }   
             }
         }
         p {
@@ -150,3 +156,49 @@
 }
 
 
+#menu_list_entrees {
+    animation: apparition1 1s
+
+}
+
+@keyframes apparition1 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#menu_list_plats {
+    animation: apparition2 1.5s
+
+}
+
+@keyframes apparition2 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#menu_list_desserts {
+    animation: apparition3 2s
+
+}
+
+@keyframes apparition3 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

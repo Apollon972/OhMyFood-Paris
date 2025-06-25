@@ -5,11 +5,12 @@ footer {
         flex-direction: column;
         @media (min-width: 720px) {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             padding-top: 50px;
+            padding-bottom: 15px;
+            padding-left: 30%;
         }
         i {
             margin-right: 2%;
@@ -19,7 +20,7 @@ footer {
             @media (min-width : 720px) {
                 text-align: center;
                 align-self: center;
-                margin-left: 15%;
+                font-size: 16px;
             }
             color: white;
             margin-left: 5%;
