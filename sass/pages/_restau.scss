@@ -54,7 +54,7 @@
     }
 
     .menu_list {
-        h4 {
+        h3 {
             font-size: 24px;
             font-weight: 200;
             margin-left: 5%;
@@ -66,16 +66,16 @@
             border-radius: 15px;
             box-shadow: 1px 1px 10px rgba(0,0,0,0.10);
             display: flex;
-            height: 50px;
+            height: 65px;
             margin-bottom: 15px;
             margin-left: 5%;
             margin-right: 5%;
-            padding-left: 5%;
-            padding-top: 2%;
-            padding-bottom: 2%;
+
             label {
                 display: flex;
                 width: 100%;
+                align-items: center;
+                padding-left: 5%;
             }
             & :hover {
                 cursor: pointer;
@@ -108,32 +108,6 @@
                 font-weight: 600;
                 transition: all 0.3s ease;
             }
-            .menu-checkmark {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    box-shadow: none;
-                    border-radius: 5px 15px 15px 5px;
-                    background-color: #99E2D0;
-                    color: white;
-                    width: 60px;
-                    height: 77px;
-                    position: absolute;
-                    margin-top: -13px;
-                    right: -60px;
-                    transition: all 0.3s ease, right 0.3s;
-                    opacity: 0;
-                    @media (min-width: 720px) {
-                        right: 10%;
-                        height: 73px;
-                        margin-top: -10px;
-                    }
-                    @media (min-width: 1100px) {
-                        right: 10%;
-                        height: 80px;
-                        margin-top: -15px;
-                    }   
-            }
         }
         p {
             margin-top: 0px;
@@ -141,6 +115,7 @@
         }
         i{
             font-size: 135%;
+            display: flex;
         }
         .underline {
             margin: 0;
@@ -161,44 +136,15 @@
 
 }
 
-@keyframes apparition1 {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
 #menu_list_plats {
     animation: apparition2 1.5s
 
 }
 
-@keyframes apparition2 {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 #menu_list_desserts {
     animation: apparition3 2s
 
 }
 
-@keyframes apparition3 {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}

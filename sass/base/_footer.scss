@@ -3,6 +3,7 @@ footer {
         background-color: #353535;
         display: flex;
         flex-direction: column;
+        padding-bottom: 30px;
         @media (min-width: 720px) {
             display: grid;
             grid-template-rows: 1fr;
@@ -13,7 +14,7 @@ footer {
             padding-left: 30%;
         }
         i {
-            margin-right: 2%;
+            padding-right: 15px;
             width: 5%;
         }
         a {
@@ -25,6 +26,7 @@ footer {
             color: white;
             margin-left: 5%;
             max-width: fit-content;
+            text-decoration: none;
         }
         img {
             width: 100px;

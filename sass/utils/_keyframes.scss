@@ -1,0 +1,53 @@
+//-------Animation du loader---------//
+@keyframes apparition_loader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+//------Animation du gif spinner------//
+@keyframes spinner-c7wet2 {
+100% {
+    transform: rotate(1turn);
+    }
+}
+
+
+//------Animations des menus des restaus---------//
+
+//---Les entrées---//
+@keyframes apparition1 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+//---Les Plats---//
+@keyframes apparition2 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+//---Les desserts---//
+@keyframes apparition3 {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

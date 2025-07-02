@@ -1,5 +1,4 @@
 @import "sass/utils/variables";
-@import "sass/utils/functions";
 @import "sass/utils/mixins";
 @import "sass/pages/index";
 @import "sass/pages/restau";
@@ -8,4 +7,8 @@
 @import "sass/base/footer";
 @import "sass/components/button";
 @import "sass/components/span_new";
-@import "sass/components/heart"
+@import "sass/components/heart";
+@import "sass/components/loader";
+@import "sass/utils/keyframes";
+@import "sass/components/spinner";
+@import "sass/components/checkmark";
