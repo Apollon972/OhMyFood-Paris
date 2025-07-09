@@ -266,11 +266,16 @@ h3 {
   }
 }
 .menu .section_title h2 {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding-left: 5%;
   font-family: Shrikhand;
 }
 @media (min-width: 720px) {
   .menu .section_title h2 {
+    width: 500px;
     padding-left: 0px;
     font-size: 32px;
   }
@@ -318,9 +323,19 @@ h3 {
   box-shadow: none;
 }
 .menu .menu_list .menu-card .menu-info .menu-title {
+  width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .menu .menu_list .menu-card .menu-info .menu-details {
+  width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: smaller;
   font-weight: 350;
 }
@@ -330,10 +345,6 @@ h3 {
   margin-top: 20px;
   font-weight: 600;
   transition: all 0.3s ease;
-}
-.menu .menu_list p {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .menu .menu_list i {
   font-size: 135%;
@@ -427,6 +438,9 @@ footer div i {
   width: 5%;
 }
 footer div a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   color: white;
   margin-left: 5%;
   max-width: -moz-fit-content;
