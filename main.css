@@ -275,7 +275,7 @@ h3 {
 }
 @media (min-width: 720px) {
   .menu .section_title h2 {
-    width: 500px;
+    width: 400px;
     padding-left: 0px;
     font-size: 32px;
   }
