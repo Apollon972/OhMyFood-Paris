@@ -476,7 +476,7 @@ footer div img {
 }
 
 .btn_explorer1 {
-  background: linear-gradient(to bottom, blue, #9356DC);
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   border: none;
   border-radius: 30px 30px 30px 30px;
   color: white;
