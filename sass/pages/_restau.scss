@@ -82,26 +82,22 @@
                 width: 100%;
                 align-items: center;
                 padding-left: 5%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             & :hover {
                 cursor: pointer;
             }
             input[type="checkbox"]:checked ~ label .menu-checkmark{
-                right: 5%;
-                opacity: 1;
-                @media (min-width: 720px) {
-                    right: 17%;
-                }
+                right: 0%;
             }
             input[type="checkbox"]:checked ~ label .menu-price {
-                transform: translateX(-55px);
+                transform: translateX(-15px);
               }
             .menu-info {
                 .menu-title {
                     width: 50px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
                     font-weight: 600;
                     margin-top: 0px;
                     margin-bottom: 0px;
@@ -111,23 +107,24 @@
                 .menu-details {
                     width: 50px;
                     overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    font-size: smaller;
                     font-weight: 350;
                 }
             }
             .menu-price {
                 box-shadow: none;
-                margin-right: 20px;
                 margin-top: 20px;
                 font-weight: 600;
+                width: 10%;
                 transition: all 0.3s ease;
             }
         }
         i{
-            font-size: 135%;
             display: flex;
+            font-size: 135%;
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         .underline {
             margin: 0;
@@ -138,6 +135,11 @@
             width: 50px;
             height: 5px;
             background-color: lightblue;
+        }
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }
