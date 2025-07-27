@@ -323,7 +323,7 @@ h5 {
   right: 0%;
 }
 .menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-price {
-  transform: translateX(-15px);
+  transform: translateX(-60px);
 }
 .menu .menu_list .menu-card .menu-info {
   width: 90%;
@@ -346,6 +346,10 @@ h5 {
   font-weight: 600;
   width: 10%;
   transition: all 0.3s ease;
+  margin-right: -2%;
+  text-overflow: initial;
+  position: absolute;
+  right: 15%;
 }
 .menu .menu_list i {
   display: flex;
@@ -354,6 +358,7 @@ h5 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: all 0.3s ease, right 0.3s;
 }
 .menu .menu_list .underline {
   margin: 0;
