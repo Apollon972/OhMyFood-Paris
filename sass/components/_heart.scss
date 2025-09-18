@@ -15,6 +15,12 @@
         
     }
 
+    .gradient-heart {
+        background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
     .fa-regular {
         opacity: 1;
         position: absolute;
@@ -56,6 +62,13 @@
         margin: 0;
         opacity: 0;
         
+    }
+    
+    .gradient-heart {
+        background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
     }
 
     .fa-regular {

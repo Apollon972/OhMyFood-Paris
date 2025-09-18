@@ -224,7 +224,7 @@ h5 {
 .div_bg {
   height: 200px;
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .div_bg {
     height: 350px;
   }
@@ -236,7 +236,7 @@ h5 {
   z-index: 1;
   position: relative;
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .div_bg img {
     height: 380px;
     -o-object-fit: cover;
@@ -254,7 +254,7 @@ h5 {
   padding-top: 10px;
   border-radius: 50px;
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .menu {
     margin-left: 15%;
     margin-right: 15%;
@@ -267,7 +267,7 @@ h5 {
   display: flex;
   flex-direction: row;
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .menu .section_title {
     justify-content: center;
     align-items: center;
@@ -283,7 +283,7 @@ h5 {
   padding-left: 5%;
   font-family: Shrikhand;
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .menu .section_title h2 {
     width: 400px;
     padding-left: 0px;
@@ -325,6 +325,11 @@ h5 {
 .menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-price {
   transform: translateX(-60px);
 }
+@media (min-width: 768px) {
+  .menu .menu_list .menu-card input[type=checkbox]:checked ~ label .menu-price {
+    transform: translateX(-80px);
+  }
+}
 .menu .menu_list .menu-card .menu-info {
   width: 90%;
   box-shadow: none;
@@ -339,17 +344,33 @@ h5 {
   width: 50px;
   overflow: hidden;
   font-weight: 350;
+  white-space: nowrap;
 }
 .menu .menu_list .menu-card .menu-price {
   box-shadow: none;
   margin-top: 20px;
+  padding-right: 35px;
   font-weight: 600;
   width: 10%;
   transition: all 0.3s ease;
   margin-right: -2%;
   text-overflow: initial;
   position: absolute;
-  right: 15%;
+  right: 0%;
+}
+@media (min-width: 768px) {
+  .menu .menu_list .menu-card .menu-price {
+    width: 20%;
+    box-shadow: none;
+    margin-top: 20px;
+    font-weight: 600;
+    width: 10%;
+    transition: all 0.3s ease;
+    margin-right: -2%;
+    text-overflow: initial;
+    position: absolute;
+    right: 10%;
+  }
 }
 .menu .menu_list i {
   display: flex;
@@ -545,6 +566,12 @@ footer div img {
   height: 30px;
   margin-top: 10px;
 }
+.heartContainer .gradient-heart {
+  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
 .heartContainer .fa-regular {
   opacity: 1;
   position: absolute;
@@ -578,6 +605,12 @@ footer div img {
   z-index: 1;
   margin: 0;
   opacity: 0;
+}
+.heartContainer_restau .gradient-heart {
+  background: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 .heartContainer_restau .fa-regular {
   opacity: 1;
@@ -674,7 +707,7 @@ footer div img {
   border-radius: 5px 15px 15px 5px;
   background-color: #99E2D0;
   color: white;
-  width: 60px;
+  width: 80px;
   height: 65px;
   right: -30%;
   position: absolute;
